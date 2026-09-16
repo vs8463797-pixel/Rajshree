@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajshree - Royal Ethnic & Bridal Wear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2621932458242767');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=2621932458242767&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    :root {
+      --primary: #6b0f1a;
+      --primary-dark: #47080f;
+      --gold: #c5a059;
+      --gold-light: #f3e5ab;
+      --bg: #faf7f2;
+      --card-bg: #ffffff;
+      --text: #2c2c2c;
+      --text-muted: #666666;
+      --border: #ede4d8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+
+    .top-bar { background: var(--primary-dark); color: var(--gold-light); font-size: 0.8rem; text-align: center; padding: 7px 15px; letter-spacing: 1.2px; font-weight: 500; }
+
+    header { background: var(--card-bg); box-shadow: 0 4px 15px rgba(0,0,0,0.06); position: sticky; top: 0; z-index: 100; }
+    .nav-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
+    
+    .brand-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+    .logo-icon { width: 42px; height: 42px; }
+    .brand-text h1 { font-family: 'Cinzel', serif; font-size: 1.6rem; color: var(--primary); letter-spacing: 2px; line-height: 1; font-weight: 700; }
+    .brand-text p { font-size: 0.68rem; color: var(--gold); letter-spacing: 1.5px; font-weight: 600; text-transform: uppercase; }
+
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .nav-btn { background: transparent; border: 1.5px solid var(--primary); color: var(--primary); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 6px; }
+    .nav-btn:hover { background: var(--primary); color: var(--gold-light); }
+    .nav-btn.cart { background: var(--primary); color: var(--gold-light); position: relative; }
+    .badge { background: #e74c3c; color: white; border-radius: 50%; padding: 2px 7px; font-size: 0.7rem; font-weight: bold; }
+
+    .hero { background: linear-gradient(rgba(107, 15, 26, 0.88), rgba(71, 8, 15, 0.92)), url('https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=1600&auto=format&fit=crop') center/cover; color: #fff; text-align: center; padding: 60px 20px; }
+    .hero h2 { font-family: 'Cinzel', serif; font-size: 2.2rem; color: var(--gold-light); margin-bottom: 8px; }
+    .hero p { font-size: 0.95rem; max-width: 650px; margin: auto; opacity: 0.95; }
+
+    .filter-section { text-align: center; margin: 30px 15px 10px; }
+    .filter-btn { background: transparent; border: 1.5px solid var(--primary); color: var(--primary); padding: 7px 16px; margin: 4px; border-radius: 25px; cursor: pointer; font-weight: 600; font-size: 0.82rem; transition: 0.2s; }
+    .filter-btn.active, .filter-btn:hover { background: var(--primary); color: var(--gold-light); }
+
+    .container { max-width: 1200px; margin: auto; padding: 20px 15px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 25px; }
+    
+    .card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.04); display: flex; flex-direction: column; border: 1px solid var(--border); transition: transform 0.2s; position: relative; }
+    .card:hover { transform: translateY(-4px); }
+    .card img { width: 100%; height: 350px; object-fit: cover; }
+    
+    .discount-tag { position: absolute; top: 12px; left: 12px; background: #e74c3c; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; letter-spacing: 0.5px; z-index: 2; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+
+    .card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .category-badge { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); font-weight: 700; }
+    .card-title { font-size: 0.98rem; font-weight: 600; margin: 4px 0 6px; color: #222; }
+    
+    .price-box { display: flex; align-items: baseline; gap: 8px; margin-bottom: 10px; }
+    .card-price { font-size: 1.25rem; font-weight: 700; color: var(--primary); }
+    .original-price { font-size: 0.9rem; color: #888; text-decoration: line-through; }
+    .discount-percent { font-size: 0.8rem; color: #27ae60; font-weight: 700; }
+    
+    .size-select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; outline: none; margin-bottom: 12px; background: #fafafa; }
+    .add-cart-btn { background: var(--primary); color: var(--gold-light); border: none; padding: 10px; border-radius: 6px; font-weight: 600; cursor: pointer; width: 100%; transition: 0.2s; letter-spacing: 0.5px; }
+    .add-cart-btn:hover { background: var(--primary-dark); }
+
+    .drawer { position: fixed; top: 0; right: -460px; width: 100%; max-width: 440px; height: 100%; background: white; box-shadow: -4px 0 20px rgba(0,0,0,0.15); transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 1000; display: flex; flex-direction: column; }
+    .drawer.open { right: 0; }
+    .drawer-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: var(--bg); }
+    .drawer-header h3 { font-family: 'Cinzel', serif; color: var(--primary); font-size: 1.2rem; }
+    .close-drawer { background: none; border: none; font-size: 1.8rem; cursor: pointer; color: #888; }
+    .drawer-body { flex: 1; overflow-y: auto; padding: 20px; }
+    
+    .cart-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px dashed #e0e0e0; align-items: center; }
+    .cart-item img { width: 65px; height: 80px; object-fit: cover; border-radius: 6px; }
+    .cart-item-info { flex: 1; }
+    .cart-item-info h4 { font-size: 0.88rem; margin-bottom: 4px; }
+    .cart-item-info p { font-size: 0.78rem; color: var(--text-muted); }
+    .cart-item-price { font-weight: 700; color: var(--primary); font-size: 0.95rem; }
+    .remove-btn { background: none; border: none; color: #e74c3c; cursor: pointer; font-size: 0.8rem; font-weight: 600; }
+    
+    .drawer-footer { padding: 20px; border-top: 1px solid var(--border); background: var(--bg); }
+    .total-row { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.1rem; margin-bottom: 15px; color: var(--primary); }
+    .checkout-btn { background: #27ae60; color: white; border: none; width: 100%; padding: 12px; border-radius: 6px; font-weight: 700; cursor: pointer; font-size: 1rem; }
+    .checkout-btn:hover { background: #219150; }
+
+    .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65); z-index: 2000; align-items: center; justify-content: center; padding: 15px; backdrop-filter: blur(3px); }
+    .modal-overlay.active { display: flex; }
+    .modal-box { background: white; width: 100%; max-width: 480px; max-height: 90vh; overflow-y: auto; border-radius: 12px; padding: 25px; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    .modal-close { position: absolute; right: 18px; top: 15px; font-size: 1.6rem; background: none; border: none; cursor: pointer; color: #888; }
+    
+    .form-group { margin-bottom: 14px; text-align: left; }
+    .form-group label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 5px; color: #333; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid #ced6e0; border-radius: 6px; font-size: 0.9rem; outline: none; }
+
+    .primary-btn { background: var(--primary); color: var(--gold-light); border: none; width: 100%; padding: 12px; border-radius: 6px; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: 0.2s; }
+    .primary-btn:hover { background: var(--primary-dark); }
+    
+    .upi-box { background: #fbfbfb; border: 2px dashed #27ae60; padding: 18px; border-radius: 10px; text-align: center; margin: 15px 0; }
+    .qr-container { display: flex; justify-content: center; margin: 10px 0; }
+    .qr-container img { width: 200px; height: 200px; border: 2px solid #ddd; border-radius: 8px; background: white; padding: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); object-fit: contain; }
+
+    .upi-apps-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 12px 0; }
+    .upi-app-btn { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px 6px; border-radius: 8px; text-decoration: none; font-size: 0.78rem; font-weight: 700; color: white; transition: 0.2s; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+    .upi-app-btn.gpay { background: #1a73e8; }
+    .upi-app-btn.phonepe { background: #5f259f; }
+    .upi-app-btn.paytm { background: #002e6e; }
+    .upi-app-btn:hover { opacity: 0.9; transform: translateY(-2px); }
+
+    .upi-copy-wrap { display: flex; gap: 6px; align-items: center; justify-content: center; margin: 10px 0 14px; background: #eef2f5; padding: 8px 12px; border-radius: 6px; border: 1px solid #dcdcdc; }
+    .upi-copy-wrap span { font-weight: 700; color: #1e90ff; font-size: 0.92rem; letter-spacing: 0.5px; }
+    .copy-btn { background: #27ae60; color: white; border: none; padding: 4px 10px; font-size: 0.75rem; border-radius: 4px; font-weight: 600; cursor: pointer; }
+
+    .success-modal-box { text-align: center; padding: 35px 25px; border-radius: 16px; border: 2px solid var(--gold); background: #ffffff; animation: popUpBounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    @keyframes popUpBounce { 0% { transform: scale(0.7); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+    .success-icon-wrap { width: 80px; height: 80px; margin: 0 auto 15px; background: #e8f8f5; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 3px solid #27ae60; }
+    .success-icon-wrap svg { width: 45px; height: 45px; fill: #27ae60; }
+    .order-receipt-card { background: var(--bg); border: 1px dashed var(--gold); border-radius: 8px; padding: 15px; margin: 20px 0; text-align: left; }
+    .receipt-row { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 6px; }
+
+    .track-status-box { background: #faf8f5; border: 1px solid var(--border); border-radius: 8px; padding: 15px; margin-top: 20px; display: none; }
+    .timeline { position: relative; padding-left: 25px; margin-top: 15px; }
+    .timeline-step { position: relative; margin-bottom: 20px; font-size: 0.85rem; }
+    .timeline-step::before { content: ''; position: absolute; left: -25px; top: 3px; width: 12px; height: 12px; border-radius: 50%; background: #ccc; border: 2px solid #fff; }
+    .timeline-step.completed::before { background: #27ae60; }
+    .timeline-step.active::before { background: var(--gold); }
+    .timeline-step h5 { font-size: 0.9rem; margin-bottom: 2px; }
+
+    .policies { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 40px 20px; margin-top: 40px; }
+    .policies-grid { max-width: 1100px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; text-align: center; }
+    .policy-box h4 { color: var(--primary); margin-bottom: 5px; font-size: 1rem; }
+    .policy-box p { font-size: 0.85rem; color: var(--text-muted); }
+
+    footer { background: #191919; color: #fff; padding: 45px 20px 20px; font-size: 0.88rem; }
+    .footer-grid { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .footer-col h4 { font-family: 'Cinzel', serif; color: var(--gold); margin-bottom: 15px; font-size: 1.1rem; }
+    .footer-col p { color: #aaa; margin-bottom: 8px; font-size: 0.85rem; }
+    .footer-col a { color: #aaa; text-decoration: none; transition: 0.2s; }
+    .footer-col a:hover { color: var(--gold); }
+
+    .floating-wa { position: fixed; bottom: 25px; right: 25px; background: #25d366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.25); z-index: 999; text-decoration: none; }
+    .floating-wa svg { width: 30px; height: 30px; fill: white; }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    ✨ SPECIAL BRIDAL CLEARANCE SALE | UP TO 80% OFF | FAST 3-5 DAYS DISPATCH ✨
+  </div>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <svg class="logo-icon" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="#6b0f1a" stroke-width="2.5" />
+          <circle cx="50" cy="50" r="41" fill="none" stroke="#c5a059" stroke-width="1" stroke-dasharray="3,3" />
+          <path d="M50,16 L54,26 L65,26 L56,33 L60,44 L50,37 L40,44 L44,33 L35,26 L46,26 Z" fill="#c5a059" />
+          <text x="50" y="74" font-family="'Cinzel', serif" font-size="34" font-weight="700" fill="#6b0f1a" text-anchor="middle">R</text>
+        </svg>
+        <div class="brand-text">
+          <h1>RAJSHREE</h1>
+          <p>Royal Touch for Special Moments</p>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <button class="nav-btn" onclick="openTrackModal()">📦 Track Order</button>
+        <button class="nav-btn" id="userAuthBtn" onclick="openAuthModal()">👤 Login / Signup</button>
+        <button class="nav-btn cart" onclick="toggleDrawer()">
+          🛒 Cart <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Elegance Woven for Celebrations</h2>
+    <p>Exclusive Heavy Bridal & Heritage Lehengas with Real Zardozi, Kanjivaram Brocade & Gota Patti at Clearance Prices.</p>
+  </section>
+
+  <div class="filter-section">
+    <button class="filter-btn active" onclick="filterItems('all')">Sabhi Designs</button>
+    <button class="filter-btn" onclick="filterItems('lehenga')">Bridal Lehenga (Special Offer)</button>
+    <button class="filter-btn" onclick="filterItems('saree')">Designer Saree</button>
+    <button class="filter-btn" onclick="filterItems('kurti')">Festive Kurti</button>
+    <button class="filter-btn" onclick="filterItems('western')">Western Wear</button>
+  </div>
+
+  <div class="container">
+    <div class="grid" id="productGrid"></div>
+  </div>
+
+  <section class="policies">
+    <div class="policies-grid">
+      <div class="policy-box">
+        <h4>⚡ Fast 3-5 Days Delivery</h4>
+        <p>Aapka order securely packed hokar 3 se 5 working dino me deliver kiya jata hai.</p>
+      </div>
+      <div class="policy-box">
+        <h4>🔄 7-Day Easy Exchange</h4>
+        <p>Fitting ya size mismatch hone par 7 din ke andar turant exchange suvidha.</p>
+      </div>
+      <div class="policy-box">
+        <h4>✨ 100% Quality Assured</h4>
+        <p>Heavy zardozi, handwoven silk, premium stitching aur authentic finish.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>RAJSHREE</h4>
+        <p>Exclusive ethnic fashion brand designed for grand Indian weddings & festive grace.</p>
+        <p style="color: var(--gold); font-size: 0.8rem; margin-top: 10px;">© 2026 Rajshree. All Rights Reserved.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Store Address</h4>
+        <p>4-A Roopnagar, Bangalore</p>
+        <p>Karnataka - PIN Code: 560001</p>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Support</h4>
+        <p>WhatsApp / Call: <a href="tel:+917203065887">+91 7203065887</a></p>
+        <p>Email: <a href="mailto:Rajshreetextile@gmail.com">Rajshreetextile@gmail.com</a></p>
+        <p>UPI ID: 9680844919@jio</p>
+        <p>Support Hours: 10:00 AM - 8:00 PM</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Action -->
+  <a href="https://wa.me/917203065887?text=Namaste%20Rajshree,%20mujhe%20aapke%20bridal%20collection%20ke%20offer%20ke%20baare%20me%20jaankari%20chahiye." class="floating-wa" target="_blank" title="WhatsApp Us">
+    <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.77.814 2.796.814 3.182 0 5.768-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.503-4.467 9.969-9.969 9.969-1.748 0-3.385-.45-4.818-1.236l-5.213 1.369 1.396-5.086c-.896-1.49-1.396-3.23-1.396-5.016 0-5.502 4.467-9.969 9.969-9.969 5.502 0 9.969 4.467 9.969 9.969z"/></svg>
+  </a>
+
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <h3>Aapka Shopping Bag</h3>
+      <button class="close-drawer" onclick="toggleDrawer()">&times;</button>
+    </div>
+    <div class="drawer-body" id="cartItemsContainer">
+      <p style="text-align: center; color: #888; margin-top: 40px;">Aapka Cart abhi khali hai.</p>
+    </div>
+    <div class="drawer-footer">
+      <div class="total-row">
+        <span>Total Payable:</span>
+        <span id="cartTotalPrice">₹0</span>
+      </div>
+      <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="authModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeAuthModal()">&times;</button>
+      <h3 style="font-family: 'Cinzel', serif; color: var(--primary); margin-bottom: 6px;">Customer Login / Signup</h3>
+      <p style="font-size: 0.85rem; color: #666; margin-bottom: 20px;">Apne mobile number se login karein taaki order verify aur track ho sake.</p>
+
+      <div id="authStep1">
+        <div class="form-group">
+          <label>Pura Naam *</label>
+          <input type="text" id="authName" placeholder="Aapka Naam">
+        </div>
+        <div class="form-group">
+          <label>10-Digit Mobile Number *</label>
+          <input type="tel" id="authPhone" maxlength="10" placeholder="9876543210">
+        </div>
+        <button class="primary-btn" onclick="sendMockOTP()">Send OTP</button>
+      </div>
+
+      <div id="authStep2" style="display: none;">
+        <div class="form-group">
+          <label>4-Digit OTP Dalein</label>
+          <input type="text" id="otpInput" maxlength="4" placeholder="e.g. 1234" style="letter-spacing: 5px; text-align: center; font-size: 1.2rem; font-weight: bold;">
+          <p id="otpDemoHint" style="font-size: 0.75rem; color: #27ae60; margin-top: 4px;"></p>
+        </div>
+        <button class="primary-btn" onclick="verifyMockOTP()">Verify & Login</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeCheckoutModal()">&times;</button>
+      <h3 style="font-family: 'Cinzel', serif; color: var(--primary); margin-bottom: 15px;">Complete Your Order</h3>
+
+      <form id="orderForm" action="https://formspree.io/f/mkjndeqw" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="Generated_Tracking_ID" id="formTrackingId">
+        <input type="hidden" name="Order_Summary" id="formOrderSummary">
+        <input type="hidden" name="Total_Amount" id="formTotalAmount">
+
+        <div class="form-group">
+          <label>Customer Name *</label>
+          <input type="text" name="Customer_Name" id="orderCustName" required>
+        </div>
+        <div class="form-group">
+          <label>Mobile Number *</label>
+          <input type="tel" name="Customer_Phone" id="orderCustPhone" required>
+        </div>
+        <div class="form-group">
+          <label>Full Delivery Address *</label>
+          <textarea name="Delivery_Address" rows="2" required placeholder="House/Flat No, Landmark, City, State, PIN"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Payment Method *</label>
+          <select name="Payment_Mode" id="paymentMode" onchange="togglePaymentBox()">
+            <option value="Online UPI">Online UPI (Instant Pay / Apps / QR)</option>
+            <option value="Cash on Delivery">Cash on Delivery (COD)</option>
+          </select>
+        </div>
+
+        <div class="upi-box" id="upiBox">
+          <p style="font-size: 0.85rem; font-weight: 600;">Payable Amount: <span id="upiAmountText" style="color: var(--primary); font-weight: 700;">₹0</span></p>
+
+          <p style="font-size: 0.75rem; color: #666; margin-top: 10px; font-weight: 600;">Direct Open & Pay via App:</p>
+          <div class="upi-apps-grid">
+            <a id="gpayBtn" href="#" class="upi-app-btn gpay">
+              ⚡ Google Pay
+            </a>
+            <a id="phonepeBtn" href="#" class="upi-app-btn phonepe">
+              ⚡ PhonePe
+            </a>
+            <a id="paytmBtn" href="#" class="upi-app-btn paytm">
+              ⚡ Paytm
+            </a>
+          </div>
+
+          <a id="directUpiAppBtn" href="#" class="primary-btn" style="background: #27ae60; text-decoration: none; text-align: center; display: block; padding: 10px; font-size: 0.9rem; margin-bottom: 10px;">
+            🚀 Open Any Available UPI App
+          </a>
+
+          <div class="upi-copy-wrap">
+            <span>UPI: <strong>9680844919@jio</strong></span>
+            <button type="button" class="copy-btn" onclick="copyUpiId()">Copy</button>
+          </div>
+
+          <p style="font-size: 0.75rem; color: #777; margin-bottom: 6px;">Ya niche diye QR code ko scan karke pay karein:</p>
+          <div class="qr-container">
+            <img id="checkoutQr" src="payment_qr.jpg" alt="Payment QR" onerror="handleQrError(this)">
+          </div>
+
+          <button type="button" class="nav-btn" onclick="downloadQRCode()" style="width: 100%; justify-content: center; border-color: #27ae60; color: #27ae60; padding: 8px; margin-top: 6px;">
+            📥 Download QR Code to Phone Gallery
+          </button>
+          
+          <div style="margin-top: 15px; text-align: left;">
+            <label style="font-size: 0.82rem; font-weight: 600; color: var(--primary);">12-Digit UTR / Transaction ID (Mandatory) *</label>
+            <input type="text" name="UTR_Number" id="utrField" placeholder="Payment receipt ka 12-digit UTR dalein" maxlength="18" required>
+          </div>
+
+          <div style="margin-top: 12px; text-align: left;">
+            <label style="font-size: 0.82rem; font-weight: 600; color: #333;">Payment Screenshot Upload (Slip / Receipt) *</label>
+            <input type="file" name="Payment_Screenshot" id="screenshotField" accept="image/*" required style="padding: 6px; font-size: 0.8rem; background: #fff;">
+          </div>
+        </div>
+
+        <button type="submit" class="primary-btn" id="submitOrderBtn">Confirm & Place Order</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box success-modal-box">
+      <div class="success-icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      </div>
+
+      <h3 style="font-family: 'Cinzel', serif; color: var(--primary); font-size: 1.4rem;">Payment & Order Successful!</h3>
+      <p style="font-size: 0.85rem; color: #666; margin-top: 4px;">Aapka order confirm ho chuka hai aur details save ho gayi hain.</p>
+
+      <div class="order-receipt-card">
+        <div class="receipt-row"><span style="color: #777;">Customer:</span><strong id="receiptName"></strong></div>
+        <div class="receipt-row"><span style="color: #777;">Total Paid:</span><strong id="receiptAmount" style="color: #27ae60;"></strong></div>
+        <div class="receipt-row"><span style="color: #777;">UTR / Ref No:</span><strong id="receiptUtr"></strong></div>
+        <div class="receipt-row"><span style="color: #777;">Tracking ID:</span><strong id="receiptTracking" style="color: var(--primary); letter-spacing: 1px;"></strong></div>
+      </div>
+
+      <button class="primary-btn" onclick="trackFromSuccess()" style="background: #27ae60; margin-bottom: 8px;">📦 Track My Shipment</button>
+      <button class="nav-btn" onclick="closeSuccessModal()" style="width: 100%; justify-content: center;">Continue Shopping</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="trackModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeTrackModal()">&times;</button>
+      <h3 style="font-family: 'Cinzel', serif; color: var(--primary); margin-bottom: 5px;">Track Your Shipment</h3>
+      <p style="font-size: 0.82rem; color: #666; margin-bottom: 15px;">Apni Tracking ID yahan dalein:</p>
+
+      <div style="display: flex; gap: 8px;">
+        <input type="text" id="trackInput" placeholder="Ex: RJ-92817" style="text-transform: uppercase; padding: 10px; border: 1px solid #ccc; border-radius: 6px; flex: 1;">
+        <button class="primary-btn" style="width: auto; padding: 0 16px;" onclick="trackOrder()">Track</button>
+      </div>
+
+      <div class="track-status-box" id="trackStatusBox">
+        <h4 id="trackOrderIdDisplay" style="color: var(--primary); margin-bottom: 4px;"></h4>
+        <p id="trackItemsDisplay" style="font-size: 0.8rem; color: #555;"></p>
+        <p id="trackEstimatedDate" style="font-size: 0.8rem; font-weight: 600; color: #27ae60; margin-top: 4px;"></p>
+
+        <div class="timeline">
+          <div class="timeline-step completed">
+            <h5>Order Confirmed & Placed</h5>
+            <span style="font-size: 0.75rem; color: #888;">Payment verified & logged into system</span>
+          </div>
+          <div class="timeline-step active">
+            <h5>Packed & Quality Checked</h5>
+            <span style="font-size: 0.75rem; color: #888;">Dispatch packaging at Bangalore Hub</span>
+          </div>
+          <div class="timeline-step">
+            <h5>In-Transit (Courier Partner)</h5>
+            <span style="font-size: 0.75rem; color: #888;">BlueDart / Delhivery tracking generated</span>
+          </div>
+          <div class="timeline-step">
+            <h5>Out for Delivery (3-5 Days)</h5>
+            <span style="font-size: 0.75rem; color: #888;">Arriving safely at your address</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const UPI_ID = "9680844919@jio";
+    const LOCAL_QR_IMAGE = "payment_qr.jpg";
+    let fallbackQrUrl = "";
+
+    const products = [
+      {
+        id: 1,
+        name: "Shimmer Mirror Work Silver Bridal Lehenga",
+        category: "lehenga",
+        price: 1149,
+        originalPrice: 3900,
+        discount: 71,
+        badge: "Special Deal",
+        image: "bridal1.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 2,
+        name: "Sequins Glitz Champagne Gold Reception Lehenga",
+        category: "lehenga",
+        price: 1599,
+        originalPrice: 5000,
+        discount: 68,
+        badge: "Bestseller",
+        image: "bridal2.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 3,
+        name: "Royal Heritage Peach-Red Embroidered Lehenga",
+        category: "lehenga",
+        price: 1999,
+        originalPrice: 7999,
+        discount: 75,
+        badge: "Grand Festive",
+        image: "bridal3.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 4,
+        name: "Grand Traditional Heavy Zardozi Red Bridal Lehenga",
+        category: "lehenga",
+        price: 2599,
+        originalPrice: 10000,
+        discount: 74,
+        badge: "Bridal Exclusive",
+        image: "bridal4.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 5,
+        name: "Charcoal Slate Silk Jharokha Embroidered Bridal Lehenga",
+        category: "lehenga",
+        price: 2499,
+        originalPrice: 9500,
+        discount: 74,
+        badge: "Designer Royal",
+        image: "1000144369.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 6,
+        name: "Blush Mauve Handcrafted Resham Floral Bridal Lehenga",
+        category: "lehenga",
+        price: 2199,
+        originalPrice: 8900,
+        discount: 75,
+        badge: "Grand Festive",
+        image: "1000144371.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 7,
+        name: "Teal Ombre Chevron Gota Patti Sangeet Lehenga",
+        category: "lehenga",
+        price: 1899,
+        originalPrice: 7200,
+        discount: 74,
+        badge: "Bestseller",
+        image: "1000144365.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 8,
+        name: "Deep Crimson Velvet Cutwork Zari Bridal Lehenga",
+        category: "lehenga",
+        price: 2699,
+        originalPrice: 10500,
+        discount: 74,
+        badge: "Bridal Exclusive",
+        image: "1000144367.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 9,
+        name: "Plum Wine Sequins Stripe Flare Reception Lehenga",
+        category: "lehenga",
+        price: 1999,
+        originalPrice: 7800,
+        discount: 74,
+        badge: "Festive Glam",
+        image: "1000144363.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 10,
+        name: "Imperial Maroon Heritage Paisley Double Dupatta Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 12500,
+        discount: 77,
+        badge: "Royal Maharani",
+        image: "1000144359.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 11,
+        name: "Rani Pink Kanjivaram Woven Brocade Bridal Lehenga",
+        category: "lehenga",
+        price: 2399,
+        originalPrice: 9900,
+        discount: 76,
+        badge: "Pure Silk",
+        image: "1000144360.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 12,
+        name: "Gharana Maroon Silk Mayur Handwork Traditional Lehenga",
+        category: "lehenga",
+        price: 2299,
+        originalPrice: 9200,
+        discount: 75,
+        badge: "Special Deal",
+        image: "1000144361.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 13,
+        name: "Maharani Floral Brocade Royal Red Wedding Lehenga",
+        category: "lehenga",
+        price: 2799,
+        originalPrice: 11999,
+        discount: 77,
+        badge: "Bridal Exclusive",
+        image: "1000144358.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 14,
+        name: "Regal Iris Violet Multi-Border Banarasi Bridal Lehenga",
+        category: "lehenga",
+        price: 2599,
+        originalPrice: 10800,
+        discount: 76,
+        badge: "Heritage Couture",
+        image: "1000144355.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 15,
+        name: "South Indian Kanchipuram Half Saree Traditional Lehenga",
+        category: "lehenga",
+        price: 1999,
+        originalPrice: 7500,
+        discount: 73,
+        badge: "Temple Heritage",
+        image: "1000144337.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 16,
+        name: "Magenta Georgette Mirror & Foil Work Party Lehenga",
+        category: "lehenga",
+        price: 1499,
+        originalPrice: 5999,
+        discount: 75,
+        badge: "Special Offer",
+        image: "1000144339.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 17,
+        name: "Kalamkari Multi-Color Festive Chaniya Choli Lehenga",
+        category: "lehenga",
+        price: 1799,
+        originalPrice: 6999,
+        discount: 74,
+        badge: "Festive Exclusive",
+        image: "1000144341.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 18,
+        name: "Ruby Crimson Front-Slit Royal Jacket Bridal Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 12900,
+        discount: 78,
+        badge: "Bridal Exclusive",
+        image: "1000144325.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 19,
+        name: "Dusty Rose Kurti Style Banarasi Weave Bridal Lehenga",
+        category: "lehenga",
+        price: 2599,
+        originalPrice: 10999,
+        discount: 76,
+        badge: "Royal Vintage",
+        image: "1000144324.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 20,
+        name: "Metallic Slate Lavender Off-Shoulder Reception Lehenga",
+        category: "lehenga",
+        price: 2699,
+        originalPrice: 11500,
+        discount: 77,
+        badge: "Designer Royal",
+        image: "1000144165.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 21,
+        name: "Deep Blood Red Velvet Jharokha Zardozi Bridal Lehenga",
+        category: "lehenga",
+        price: 2799,
+        originalPrice: 11999,
+        discount: 77,
+        badge: "Bridal Exclusive",
+        image: "1000144319.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 22,
+        name: "Peacock Blue Gold Zari Dori Heavy Festive Lehenga",
+        category: "lehenga",
+        price: 2399,
+        originalPrice: 9999,
+        discount: 76,
+        badge: "Festive Glam",
+        image: "1000144323.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 23,
+        name: "Wine Magenta Intricate Scallop Border Bridal Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 12500,
+        discount: 77,
+        badge: "Royal Maharani",
+        image: "1000144170.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 24,
+        name: "Royal Fuchsia Banarasi Brocade Shimmer Bridal Lehenga",
+        category: "lehenga",
+        price: 2499,
+        originalPrice: 10200,
+        discount: 75,
+        badge: "Pure Silk",
+        image: "1000144318.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 25,
+        name: "Grand Maharani Crimson Raw Silk Trail Bridal Lehenga",
+        category: "lehenga",
+        price: 2999,
+        originalPrice: 13500,
+        discount: 78,
+        badge: "Royal Couture",
+        image: "1000144178.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 26,
+        name: "Mulberry Wine All-Over Zari Jaal Reception Lehenga",
+        category: "lehenga",
+        price: 2499,
+        originalPrice: 10500,
+        discount: 76,
+        badge: "Festive Glam",
+        image: "1000144180.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 27,
+        name: "Ruby Red Sweetheart Corset Heavy Tassel Bridal Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 12999,
+        discount: 78,
+        badge: "Bridal Exclusive",
+        image: "1000144181.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 28,
+        name: "Deep Cherry Silk Royal Cape Sleeves Bridal Lehenga",
+        category: "lehenga",
+        price: 2699,
+        originalPrice: 11800,
+        discount: 77,
+        badge: "Designer Royal",
+        image: "1000144183.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 29,
+        name: "Traditional Maroon Double Dupatta Zardozi Wedding Lehenga",
+        category: "lehenga",
+        price: 2799,
+        originalPrice: 12200,
+        discount: 77,
+        badge: "Bridal Exclusive",
+        image: "1000144187.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 30,
+        name: "Metallic Ash Silver Hand-Embroidered Cape Reception Lehenga",
+        category: "lehenga",
+        price: 2599,
+        originalPrice: 11000,
+        discount: 76,
+        badge: "Celebrity Choice",
+        image: "1000144188.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 31,
+        name: "Royal Scarlet Silk Floral Buti Temple Border Lehenga",
+        category: "lehenga",
+        price: 2299,
+        originalPrice: 9800,
+        discount: 77,
+        badge: "Heritage Royal",
+        image: "1000144194.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 32,
+        name: "Shahi Red & Gold Striped Gota Border Bridal Lehenga",
+        category: "lehenga",
+        price: 2799,
+        originalPrice: 12500,
+        discount: 78,
+        badge: "Bridal Exclusive",
+        image: "1000144195.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 33,
+        name: "Crimson Pink Heavy Floral Sequin Flare Wedding Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 13000,
+        discount: 78,
+        badge: "Royal Maharani",
+        image: "1000144200.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 34,
+        name: "Heritage Red Multi-Tier Scallop Peacock Bridal Lehenga",
+        category: "lehenga",
+        price: 2999,
+        originalPrice: 13999,
+        discount: 79,
+        badge: "Bridal Exclusive",
+        image: "1000144197.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 35,
+        name: "Heritage Maroon Velvet Royal Rajwada Bridal Lehenga",
+        category: "lehenga",
+        price: 2999,
+        originalPrice: 14500,
+        discount: 79,
+        badge: "Royal Rajwada",
+        image: "1000144206.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 36,
+        name: "Shahi Red Double Dupatta Doli Procession Bridal Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 13999,
+        discount: 79,
+        badge: "Bridal Exclusive",
+        image: "1000144211.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 37,
+        name: "Rajputana Crimson Silk Buti Work Wedding Lehenga",
+        category: "lehenga",
+        price: 2499,
+        originalPrice: 11000,
+        discount: 77,
+        badge: "Royal Heritage",
+        image: "1000144215.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 38,
+        name: "Lavender Silver Crystal Flare Reception Lehenga",
+        category: "lehenga",
+        price: 2799,
+        originalPrice: 12500,
+        discount: 78,
+        badge: "Cocktail Glam",
+        image: "1000144214.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 39,
+        name: "Blood Red Kali-Cut Heavy Zari Bridal Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 13200,
+        discount: 78,
+        badge: "Bridal Exclusive",
+        image: "1000144217.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 40,
+        name: "Magenta Pink Sweetheart Corset Heavy Bridal Lehenga",
+        category: "lehenga",
+        price: 2699,
+        originalPrice: 11999,
+        discount: 78,
+        badge: "Designer Royal",
+        image: "1000144218.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 41,
+        name: "Rani Pink Raw Silk Temple Arch Festive Lehenga",
+        category: "lehenga",
+        price: 2399,
+        originalPrice: 10500,
+        discount: 77,
+        badge: "Festive Exclusive",
+        image: "1000144221.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 42,
+        name: "Cream & Pastel Mint Scallop Border Sangeet Lehenga",
+        category: "lehenga",
+        price: 2599,
+        originalPrice: 11200,
+        discount: 77,
+        badge: "Pastel Couture",
+        image: "1000144224.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 43,
+        name: "Ivory Pearl Hand-Embroidered Floral Flare Lehenga",
+        category: "lehenga",
+        price: 2799,
+        originalPrice: 12900,
+        discount: 78,
+        badge: "Celebrity Choice",
+        image: "1000144225.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 44,
+        name: "Emerald Sage Green Floral Embroidery Festive Lehenga",
+        category: "lehenga",
+        price: 2499,
+        originalPrice: 10800,
+        discount: 77,
+        badge: "Grand Festive",
+        image: "1000144229.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 45,
+        name: "Royal Wine Velvet Intricate Zari Work Bridal Lehenga",
+        category: "lehenga",
+        price: 2999,
+        originalPrice: 14900,
+        discount: 80,
+        badge: "Royal Velvet",
+        image: "1000144296.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 46,
+        name: "Rosewood Red Heritage Embroidered Bridal Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 13999,
+        discount: 79,
+        badge: "Heritage Couture",
+        image: "1000144297.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 47,
+        name: "Rani Pink Kalidar Gota Patti Wedding Lehenga",
+        category: "lehenga",
+        price: 2499,
+        originalPrice: 11500,
+        discount: 78,
+        badge: "Bestseller",
+        image: "1000144289.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 48,
+        name: "Traditional Red Silk Arch Panel Bridal Lehenga",
+        category: "lehenga",
+        price: 2799,
+        originalPrice: 12800,
+        discount: 78,
+        badge: "Bridal Exclusive",
+        image: "1000144291.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 49,
+        name: "Vermilion Red Heavy Zardozi Belt Style Bridal Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 13500,
+        discount: 79,
+        badge: "Bridal Exclusive",
+        image: "1000144293.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 50,
+        name: "Scarlet Red Double Dupatta Royal Heritage Lehenga",
+        category: "lehenga",
+        price: 2999,
+        originalPrice: 14200,
+        discount: 79,
+        badge: "Royal Maharani",
+        image: "1000144287.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 51,
+        name: "Deep Crimson Velvet Jaal Work Wedding Lehenga",
+        category: "lehenga",
+        price: 2899,
+        originalPrice: 13900,
+        discount: 79,
+        badge: "Velvet Couture",
+        image: "1000144285.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      },
+      {
+        id: 52,
+        name: "Ivory Gold Silk Bridal Lehenga with Banarasi Red Dupatta",
+        category: "lehenga",
+        price: 2999,
+        originalPrice: 14500,
+        discount: 79,
+        badge: "Heritage Royal",
+        image: "1000144279.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 53,
+        name: "Pastel Dust Multi-Floral Embroidered Reception Lehenga",
+        category: "lehenga",
+        price: 2799,
+        originalPrice: 12999,
+        discount: 78,
+        badge: "Pastel Couture",
+        image: "1000144281.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)"]
+      },
+      {
+        id: 54,
+        name: "Rust Orange Royal Heritage Zari Bridal Lehenga",
+        category: "lehenga",
+        price: 2699,
+        originalPrice: 12500,
+        discount: 78,
+        badge: "Special Deal",
+        image: "1000144270.jpg",
+        sizes: ["Semi-Stitched (Custom Fit)", "S (Bust 34)", "M (Bust 36)", "L (Bust 38)", "XL (Bust 40)", "XXL (Bust 42)"]
+      }
+    ];
+
+    let cart = [];
+    let loggedInUser = JSON.parse(localStorage.getItem('rajshree_user')) || null;
+    let generatedOTP = null;
+    let lastGeneratedTrackingId = "";
+
+    const grid = document.getElementById("productGrid");
+    
+    function renderProducts(items) {
+      grid.innerHTML = "";
+      if(items.length === 0) {
+        grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #888; padding: 40px 0;">Is category me abhi koi design uplabdh nahi hai.</p>`;
+        return;
+      }
+      items.forEach(p => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.setAttribute("data-cat", p.category);
+        
+        let sizeOptions = p.sizes.map(s => `<option value="${s}">${s}</option>`).join("");
+
+        card.innerHTML = `
+          <div class="discount-tag">${p.discount}% OFF</div>
+          <img src="${p.image}" alt="${p.name}" onerror="this.src='https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&auto=format&fit=crop'">
+          <div class="card-body">
+            <div>
+              <span class="category-badge">${p.badge}</span>
+              <h3 class="card-title">${p.name}</h3>
+              <div class="price-box">
+                <span class="card-price">₹${p.price.toLocaleString('en-IN')}</span>
+                <span class="original-price">₹${p.originalPrice.toLocaleString('en-IN')}</span>
+                <span class="discount-percent">(${p.discount}% OFF)</span>
+              </div>
+            </div>
+            <div>
+              <label style="font-size:0.75rem; color:#666;">Size Chunein:</label>
+              <select class="size-select" id="size-pick-${p.id}">${sizeOptions}</select>
+              <button class="add-cart-btn" onclick="addToCart(${p.id})">Add to Bag 🛍️</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    renderProducts(products);
+
+    function filterItems(cat) {
+      const btns = document.querySelectorAll(".filter-btn");
+      btns.forEach(b => b.classList.remove("active"));
+      if(window.event && window.event.target) window.event.target.classList.add("active");
+
+      if(cat === 'all') {
+        renderProducts(products);
+      } else {
+        renderProducts(products.filter(p => p.category === cat));
+      }
+    }
+
+    function toggleDrawer() {
+      document.getElementById("cartDrawer").classList.toggle("open");
+    }
+
+    function addToCart(productId) {
+      const prod = products.find(p => p.id === productId);
+      const sizeDropdown = document.getElementById(`size-pick-${productId}`);
+      const selectedSize = sizeDropdown ? sizeDropdown.value : "Semi-Stitched (Custom Fit)";
+
+      cart.push({
+        ...prod,
+        cartItemId: Date.now() + Math.random(),
+        selectedSize: selectedSize
+      });
+
+      if(window.fbq) {
+        fbq('track', 'AddToCart', {
+          content_name: prod.name,
+          content_ids: [prod.id],
+          content_type: 'product',
+          value: prod.price,
+          currency: 'INR'
+        });
+      }
+
+      updateCartUI();
+      toggleDrawer();
+    }
+
+    function removeFromCart(cartItemId) {
+      cart = cart.filter(item => item.cartItemId !== cartItemId);
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const countEl = document.getElementById("cartCount");
+      const container = document.getElementById("cartItemsContainer");
+      const totalEl = document.getElementById("cartTotalPrice");
+
+      countEl.innerText = cart.length;
+
+      if(cart.length === 0) {
+        container.innerHTML = `<p style="text-align: center; color: #888; margin-top: 40px;">Aapka Cart abhi khali hai.</p>`;
+        totalEl.innerText = "₹0";
+        return;
+      }
+
+      let total = 0;
+      container.innerHTML = "";
+
+      cart.forEach(item => {
+        total += item.price;
+        const itemRow = document.createElement("div");
+        itemRow.className = "cart-item";
+        itemRow.innerHTML = `
+          <img src="${item.image}" onerror="this.src='https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&auto=format&fit=crop'" alt="${item.name}">
+          <div class="cart-item-info">
+            <h4>${item.name}</h4>
+            <p>Size: <strong>${item.selectedSize}</strong></p>
+            <span class="cart-item-price">₹${item.price.toLocaleString('en-IN')}</span>
+          </div>
+          <button class="remove-btn" onclick="removeFromCart(${item.cartItemId})">Hatao</button>
+        `;
+        container.appendChild(itemRow);
+      });
+
+      totalEl.innerText = `₹${total.toLocaleString('en-IN')}`;
+    }
+
+    // MANDATORY LOGIN GATE FOR CHECKOUT
+    function proceedToCheckout() {
+      if(cart.length === 0) {
+        alert("Pehle cart me koi item add karein.");
+        return;
+      }
+
+      // Agar user login nahi hai, pehle login popup open hoga
+      if(!loggedInUser || !loggedInUser.phone) {
+        toggleDrawer();
+        alert("Kripya order place karne se pehle apna mobile number login/verify karein.");
+        openAuthModal();
+        return;
+      }
+
+      toggleDrawer();
+      openCheckoutModal();
+    }
+
+    function openCheckoutModal() {
+      const modal = document.getElementById("checkoutModal");
+      const total = cart.reduce((acc, item) => acc + item.price, 0);
+
+      lastGeneratedTrackingId = "RJ-" + Math.floor(10000 + Math.random() * 90000);
+      document.getElementById("formTrackingId").value = lastGeneratedTrackingId;
+      document.getElementById("formOrderSummary").value = cart.map(c => `${c.name} [Size: ${c.selectedSize}] - ₹${c.price}`).join(" | ");
+      document.getElementById("formTotalAmount").value = "₹" + total.toLocaleString('en-IN');
+      document.getElementById("upiAmountText").innerText = "₹" + total.toLocaleString('en-IN');
+
+      const upiPaymentPayload = `upi://pay?pa=${UPI_ID}&pn=Rajshree%20Ethnic&am=${total}&cu=INR&tn=Order%20${lastGeneratedTrackingId}`;
+      const gpayPayload = `upi://pay?pa=${UPI_ID}&pn=Rajshree%20Ethnic&am=${total}&cu=INR&tn=Order%20${lastGeneratedTrackingId}&package=com.google.android.apps.nbu.paisa.user`;
+      const phonepePayload = `upi://pay?pa=${UPI_ID}&pn=Rajshree%20Ethnic&am=${total}&cu=INR&tn=Order%20${lastGeneratedTrackingId}&package=com.phonepe.app`;
+      const paytmPayload = `upi://pay?pa=${UPI_ID}&pn=Rajshree%20Ethnic&am=${total}&cu=INR&tn=Order%20${lastGeneratedTrackingId}&package=net.one97.paytm`;
+
+      document.getElementById("gpayBtn").href = gpayPayload;
+      document.getElementById("phonepeBtn").href = phonepePayload;
+      document.getElementById("paytmBtn").href = paytmPayload;
+      document.getElementById("directUpiAppBtn").href = upiPaymentPayload;
+
+      fallbackQrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(upiPaymentPayload)}`;
+      const qrEl = document.getElementById("checkoutQr");
+      qrEl.src = LOCAL_QR_IMAGE + "?v=" + Date.now();
+
+      if(loggedInUser) {
+        document.getElementById("orderCustName").value = loggedInUser.name || "";
+        document.getElementById("orderCustPhone").value = loggedInUser.phone || "";
+      }
+
+      if(window.fbq) {
+        fbq('track', 'InitiateCheckout', {
+          value: total,
+          currency: 'INR',
+          num_items: cart.length
+        });
+      }
+
+      togglePaymentBox();
+      modal.classList.add("active");
+    }
+
+    function handleQrError(img) {
+      if(img.src !== fallbackQrUrl && fallbackQrUrl) {
+        img.src = fallbackQrUrl;
+      }
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById("checkoutModal").classList.remove("active");
+    }
+
+    function togglePaymentBox() {
+      const mode = document.getElementById("paymentMode").value;
+      const upiBox = document.getElementById("upiBox");
+      const utrField = document.getElementById("utrField");
+      const screenshotField = document.getElementById("screenshotField");
+
+      if(mode === "Cash on Delivery") {
+        upiBox.style.display = "none";
+        utrField.required = false;
+        screenshotField.required = false;
+      } else {
+        upiBox.style.display = "block";
+        utrField.required = true;
+        screenshotField.required = true;
+      }
+    }
+
+    function copyUpiId() {
+      navigator.clipboard.writeText(UPI_ID).then(() => {
+        alert("UPI ID copy ho gayi hai: " + UPI_ID);
+      }).catch(() => {
+        const temp = document.createElement("input");
+        temp.value = UPI_ID;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand("copy");
+        document.body.removeChild(temp);
+        alert("UPI ID copy ho gayi hai: " + UPI_ID);
+      });
+    }
+
+    function downloadQRCode() {
+      const qrImg = document.getElementById("checkoutQr");
+      const link = document.createElement("a");
+      link.href = qrImg.src;
+      link.download = `Rajshree-Payment-QR.jpg`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    document.getElementById("orderForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById("submitOrderBtn");
+      btn.innerText = "Order Place Kiya Ja Raha Hai...";
+      btn.disabled = true;
+
+      const trackingId = document.getElementById("formTrackingId").value;
+      const custName = document.getElementById("orderCustName").value;
+      const utrVal = document.getElementById("utrField").value || "COD / N/A";
+      const totalVal = document.getElementById("formTotalAmount").value;
+      const totalNumeric = cart.reduce((acc, item) => acc + item.price, 0);
+
+      const formData = new FormData(this);
+
+      try {
+        const res = await fetch(this.action, {
+          method: "POST",
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if(res.ok) {
+          const orderObj = {
+            id: trackingId,
+            items: cart.map(i => `${i.name} (${i.selectedSize})`).join(", "),
+            date: new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }),
+            status: "Packed & Quality Checked"
+          };
+          
+          let savedOrders = JSON.parse(localStorage.getItem("rajshree_orders")) || [];
+          savedOrders.push(orderObj);
+          localStorage.setItem("rajshree_orders", JSON.stringify(savedOrders));
+
+          if(window.fbq) {
+            fbq('track', 'Purchase', {
+              value: totalNumeric,
+              currency: 'INR'
+            });
+          }
+
+          cart = [];
+          updateCartUI();
+          closeCheckoutModal();
+
+          document.getElementById("receiptName").innerText = custName;
+          document.getElementById("receiptAmount").innerText = totalVal;
+          document.getElementById("receiptUtr").innerText = utrVal;
+          document.getElementById("receiptTracking").innerText = trackingId;
+          
+          document.getElementById("successModal").classList.add("active");
+        } else {
+          alert("Order details submit karne me samasya aayi. Kripya details check karein.");
+        }
+      } catch(err) {
+        alert("Network issue. Kripya internet connection check karein.");
+      } finally {
+        btn.innerText = "Confirm & Place Order";
+        btn.disabled = false;
+      }
+    });
+
+    function closeSuccessModal() {
+      document.getElementById("successModal").classList.remove("active");
+    }
+
+    function trackFromSuccess() {
+      closeSuccessModal();
+      document.getElementById("trackInput").value = lastGeneratedTrackingId;
+      openTrackModal();
+      trackOrder();
+    }
+
+    function openTrackModal() { document.getElementById("trackModal").classList.add("active"); }
+    function closeTrackModal() { document.getElementById("trackModal").classList.remove("active"); }
+
+    function openAuthModal() { document.getElementById("authModal").classList.add("active"); }
+    function closeAuthModal() { document.getElementById("authModal").classList.remove("active"); }
+
+    function sendMockOTP() {
+      const name = document.getElementById("authName").value.trim();
+      const phone = document.getElementById("authPhone").value.trim();
+
+      if(!name || phone.length !== 10) {
+        alert("Kripya apna poora naam aur 10-digit mobile number dalein.");
+        return;
+      }
+
+      generatedOTP = "1234";
+      document.getElementById("authStep1").style.display = "none";
+      document.getElementById("authStep2").style.display = "block";
+      document.getElementById("otpDemoHint").innerText = `Test OTP hai: ${generatedOTP}`;
+    }
+
+    function verifyMockOTP() {
+      const otp = document.getElementById("otpInput").value.trim();
+      if(otp === generatedOTP) {
+        loggedInUser = {
+          name: document.getElementById("authName").value.trim(),
+          phone: document.getElementById("authPhone").value.trim()
+        };
+        localStorage.setItem("rajshree_user", JSON.stringify(loggedInUser));
+        document.getElementById("userAuthBtn").innerText = `👤 ${loggedInUser.name.split(" ")[0]}`;
+        closeAuthModal();
+
+        // Agar cart me pehle se item tha to login ke turant baad checkout khulega
+        if(cart.length > 0) {
+          openCheckoutModal();
+        } else {
+          alert("Login safal raha! Ab aap shopping jari rakh sakte hain.");
+        }
+      } else {
+        alert("Galat OTP! Kripya sahi OTP dalein.");
+      }
+    }
+
+    function trackOrder() {
+      const code = document.getElementById("trackInput").value.trim().toUpperCase();
+      const statusBox = document.getElementById("trackStatusBox");
+
+      if(!code) {
+        alert("Kripya Tracking ID dalein.");
+        return;
+      }
+
+      let savedOrders = JSON.parse(localStorage.getItem("rajshree_orders")) || [];
+      let found = savedOrders.find(o => o.id.toUpperCase() === code);
+
+      statusBox.style.display = "block";
+      document.getElementById("trackOrderIdDisplay").innerText = `Tracking ID: ${code}`;
+
+      if(found) {
+        document.getElementById("trackItemsDisplay").innerText = `Items: ${found.items}`;
+        document.getElementById("trackEstimatedDate").innerText = `Estimated Delivery: 3 se 5 Working Days ke andar`;
+      } else {
+        document.getElementById("trackItemsDisplay").innerText = `Package Status: In Process`;
+        document.getElementById("trackEstimatedDate").innerText = `Delivery Expected: 3-5 Working Days`;
+      }
+    }
+
+    if(loggedInUser && loggedInUser.name) {
+      document.getElementById("userAuthBtn").innerText = `👤 ${loggedInUser.name.split(" ")[0]}`;
+    }
+  </script>
+</body>
+</html>
+      
+        
+        
